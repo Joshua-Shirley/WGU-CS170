@@ -2,6 +2,18 @@
 
 ## A - Nora's Bagel 
 
+### 1. Second Normal Form
+
+![Second Normal Form](/assets/images/second_normal_form_nora_bagel.png "Second Normal Form")
+
+### 2. Third Normal Form
+
+![Third Normal Form](/assets/images/third_normal_form_nora_bagel.png "Third Normal Form")
+
+### 3. Physical Design
+
+![Physical Design](/assets/images/physical_design_nora_bagel.png "Physical Design")
+
 ## B - Jaunty Coffee Co
 
 ### 1. Table Schema
