@@ -676,8 +676,13 @@ VALUES
 (45, 2, 'Blonde', 11.24);
 ~~~~~
 
+#### SQL Result
+
+![Create Table Results](/assets/images/populate_tables_output.png "Create Table Results")
+
 ### 3. Create a View
 
+#### SQL Code
 ~~~~SQL
 -- -----------------------------------------------------
 -- VIEWS
@@ -693,8 +698,28 @@ SELECT employee_id,
 FROM employee;
 ~~~~
 
-### 4. Create an Index
+#### SQL Result
 
+![Create Table Results](/assets/images/create_view_output.png "Create Table Results")
+
+### 4. Create an Index
+#### SQL Code
+~~~~SQL
+-- -----------------------------------------------------
+-- VIEWS
+-- -----------------------------------------------------
+-- ------------------------------------------------------
+-- INDEXES
+-- ------------------------------------------------------
+
+CREATE INDEX idx_coffee_name
+ON coffee(coffee_name);
+
+-- SHOW INDEX FROM coffee;
+~~~~
+#### SQL Result
+
+![Create Table Results](/assets/images/create_index_output.png "Create Table Results")
 
 
 ### 5. Select From Where
