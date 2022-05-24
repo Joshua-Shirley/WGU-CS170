@@ -7,6 +7,8 @@
 ## B - Jaunty Coffee Co
 
 ### 1. Table Schema
+
+#### SQL Code
 ~~~~sql
 USE JCoffeeCo; 
 
@@ -49,6 +51,11 @@ CREATE TABLE IF NOT EXISTS coffee (
 	CONSTRAINT fk_coffee_supplier_id FOREIGN KEY (supplier_id) REFERENCES supplier(supplier_id)
 );
 ~~~~
+
+#### SQL Result
+
+![Create Table Results](/assets/images/create_tables_results.png "Create Table Results")
+
 
 ### 2. Insert Data
 
