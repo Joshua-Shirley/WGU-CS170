@@ -7,22 +7,7 @@
 ## B - Jaunty Coffee Co
 
 ### 1. Table Schema
-
-
-### 2. Insert Data
-
-
-### 3. Create a View
-
-
-### 4. Create an Index
-
-
-
-### 5. Select From Where
-
-
-`` USE JCoffeeCo; ``
+`` USE JCoffeeCo; 
 
 CREATE TABLE IF NOT EXISTS coffee_shop (
 	shop_id INTEGER AUTO_INCREMENT,
@@ -31,6 +16,7 @@ CREATE TABLE IF NOT EXISTS coffee_shop (
 	state CHAR(2),
 	CONSTRAINT pk_shop_id PRIMARY KEY (shop_id)
 );
+``
 
 CREATE TABLE IF NOT EXISTS supplier (
 	supplier_id INTEGER AUTO_INCREMENT,
@@ -62,3 +48,18 @@ CREATE TABLE IF NOT EXISTS coffee (
 	CONSTRAINT fk_coffee_shop_id FOREIGN KEY (shop_id) REFERENCES coffee_shop(shop_id),
 	CONSTRAINT fk_coffee_supplier_id FOREIGN KEY (supplier_id) REFERENCES supplier(supplier_id)
 );
+
+### 2. Insert Data
+
+
+### 3. Create a View
+
+
+### 4. Create an Index
+
+
+
+### 5. Select From Where
+
+
+
