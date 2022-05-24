@@ -745,9 +745,7 @@ WHERE state in ('NS', 'VC' );
 -- SHOP MENUS
 -- ------------------------------------------- 
 
-SELECT 
-	-- coffee_id,
-	-- coffee.shop_id,
+SELECT 	
     coffee_shop.shop_name AS Shop,    
     supplier.company_name AS Beans,
     coffee_name AS Roast,
