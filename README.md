@@ -705,9 +705,6 @@ FROM employee;
 ### 4. Create an Index
 #### SQL Code
 ~~~~SQL
--- -----------------------------------------------------
--- VIEWS
--- -----------------------------------------------------
 -- ------------------------------------------------------
 -- INDEXES
 -- ------------------------------------------------------
@@ -724,5 +721,19 @@ ON coffee(coffee_name);
 
 ### 5. Select From Where
 
+#### SQL Code
+~~~~SQL
+-- -------------------------------------------
+-- SFW SELECT FROM WHERE example
+-- -------------------------------------------
 
+SELECT shop_id,
+	shop_name,
+    city,
+    state
+FROM coffee_shop
+WHERE state in ('NS', 'VC' );
+~~~~
+#### SQL Result
 
+![SELECT FROM WHERE Results](/assets/images/SFW_results.png "Select From Where Query Results")
