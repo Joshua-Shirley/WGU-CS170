@@ -1,6 +1,4 @@
-# WGU-CS170
-# CS 170 Data Management - Applications
-# Course Assignment
+# CS 170 Data Management - Applications - Course Assignment
 
 ## A - Nora's Bagel 
 
@@ -58,7 +56,7 @@ CREATE TABLE IF NOT EXISTS coffee (
 
 
 ### 2. Insert Data
-
+#### SQL Code
 ~~~~SQL
 -- -----------------------------------------------------
 -- Insert data into the tables
@@ -678,7 +676,7 @@ VALUES
 
 #### SQL Result
 
-![Create Table Results](/assets/images/populate_tables_output.png "Create Table Results")
+![Populate Tables with Data](/assets/images/populate_tables_output.png "Populate Tables Results")
 
 ### 3. Create a View
 
@@ -700,7 +698,7 @@ FROM employee;
 
 #### SQL Result
 
-![Create Table Results](/assets/images/create_view_output.png "Create Table Results")
+![Create View Results](/assets/images/create_view_output.png "Create View Results")
 
 ### 4. Create an Index
 #### SQL Code
@@ -716,7 +714,7 @@ ON coffee(coffee_name);
 ~~~~
 #### SQL Result
 
-![Create Table Results](/assets/images/create_index_output.png "Create Table Results")
+![Create Index Results](/assets/images/create_index_output.png "Create Index Results")
 
 
 ### 5. Select From Where
