@@ -7,7 +7,8 @@
 ## B - Jaunty Coffee Co
 
 ### 1. Table Schema
-`` USE JCoffeeCo; 
+~~~~sql
+USE JCoffeeCo; 
 
 CREATE TABLE IF NOT EXISTS coffee_shop (
 	shop_id INTEGER AUTO_INCREMENT,
@@ -48,6 +49,7 @@ CREATE TABLE IF NOT EXISTS coffee (
 	CONSTRAINT fk_coffee_shop_id FOREIGN KEY (shop_id) REFERENCES coffee_shop(shop_id),
 	CONSTRAINT fk_coffee_supplier_id FOREIGN KEY (supplier_id) REFERENCES supplier(supplier_id)
 );
+~~~~
 
 ### 2. Insert Data
 
