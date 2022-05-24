@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS coffee (
 
 #### SQL Result
 
-![Create Table Results](/assets/images/create_tables_results.png "Create Table Results")
+![Create Table Results](/assets/images/create_tables_results_v2.png "Create Table Results")
 
 
 ### 2. Insert Data
