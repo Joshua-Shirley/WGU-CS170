@@ -31,13 +31,20 @@
 | Bagel Description 	| Bagel                 	| Functional dependence on bagel ID           	|
 | Bagel Price       	| Bagel                 	| Functional dependence on bagel ID           	|
 
-** Cardinality of Entity Relations **
+**Cardinality of Entity Relations**
 
-
+Bagel Order -> has -> Bagels
+Bagels -> are part of -> a Bagel Order
+This describes a many to many relationship.
+Bagel order line item is an associative entity that ties orders and products together.
+One order includes one or more line items (One to Many).
+Many line items bagel ids point to one bagel instance (Many to One).
 
 ### 2. Third Normal Form
 
 ![Third Normal Form](/assets/images/third_normal_form_nora_bagel.png "Third Normal Form")
+
+
 
 ### 3. Physical Design
 
