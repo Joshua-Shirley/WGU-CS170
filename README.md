@@ -4,7 +4,33 @@
 
 ### 1. Second Normal Form
 
+#### A & B
 ![Second Normal Form](/assets/images/second_normal_form_nora_bagel.png "Second Normal Form")
+
+#### C - Explain the assignments
+
+| Attribute         	| New Entity            	| Explanation 	|
+|-------------------	|-----------------------	|--------------	|
+| Bagel Order ID    	| Bagel Order           	|              	|
+| Order Date        	| Bagel Order           	|              	|
+| First Name        	| Bagel Order           	|              	|
+| Last Name         	| Bagel Order           	|              	|
+| Address 1         	| Bagel Order           	|              	|
+| Address 2         	| Bagel Order           	|              	|
+| City              	| Bagel Order           	|              	|
+| State             	| Bagel Order           	|              	|
+| Zip               	| Bagel Order           	|              	|
+| Mobile Phone      	| Bagel Order           	|              	|
+| Delivery Fee      	| Bagel Order           	|              	|
+| Special Notes     	| Bagel Order           	|              	|
+| Bagel Order ID    	| Bagel Order Line Item 	|              	|
+| Bagel ID          	| Bagel Order Line Item 	|              	|
+| Bagel Quantity    	| Bagel Order Line Item 	|              	|
+| Bagel ID          	| Bagel                 	|              	|
+| Bagel Name        	| Bagel                 	|              	|
+| Bagel Description 	| Bagel                 	|              	|
+| Bagel Price       	| Bagel                 	|              	|
+
 
 ### 2. Third Normal Form
 
