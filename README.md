@@ -33,22 +33,35 @@
 
 **Cardinality of Entity Relations**
 
-Bagel Order -> has -> Bagels
-Bagels -> are part of -> a Bagel Order
-This describes a many to many relationship.
-Bagel order line item is an associative entity that ties orders and products together.
-One order includes one or more line items (One to Many).
-Many line items bagel ids point to one bagel instance (Many to One).
+Bagel Order -> has -> Bagels  
+Bagels -> are part of -> a Bagel Order  
+This describes a many to many relationship.  
+Bagel order line item is an associative entity that ties orders and products together.  
+One order includes one or more line items (One to Many).  
+Many line items bagel ids point to one bagel instance (Many to One).  
 
 ### 2. Third Normal Form
 
 ![Third Normal Form](/assets/images/third_normal_form_nora_bagel.png "Third Normal Form")
 
+**Relationships between the tables**  
+The relationships between Order -> Line Items <- Bagels is the same as before.  
+
+The new entity Customer has a Many to One relationship with Orders.  
+Customer -> places -> Orders.  
+Orders -> are placed by -> a Customer.  
+One order is owned by a single customer.  The same customer can place many orders.  
+Customer -> 1 : M -> Orders.  
+
+**Attributes assigned**
 
 
 ### 3. Physical Design
 
 ![Physical Design](/assets/images/physical_design_nora_bagel.png "Physical Design")
+
+
+
 
 ## B - Jaunty Coffee Co
 
