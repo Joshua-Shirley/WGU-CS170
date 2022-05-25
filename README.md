@@ -9,27 +9,30 @@
 
 #### C - Explain the assignments
 
-| Attribute         	| New Entity            	| Explanation 	|
-|-------------------	|-----------------------	|--------------	|
-| Bagel Order ID    	| Bagel Order           	|              	|
-| Order Date        	| Bagel Order           	|              	|
-| First Name        	| Bagel Order           	|              	|
-| Last Name         	| Bagel Order           	|              	|
-| Address 1         	| Bagel Order           	|              	|
-| Address 2         	| Bagel Order           	|              	|
-| City              	| Bagel Order           	|              	|
-| State             	| Bagel Order           	|              	|
-| Zip               	| Bagel Order           	|              	|
-| Mobile Phone      	| Bagel Order           	|              	|
-| Delivery Fee      	| Bagel Order           	|              	|
-| Special Notes     	| Bagel Order           	|              	|
-| Bagel Order ID    	| Bagel Order Line Item 	|              	|
-| Bagel ID          	| Bagel Order Line Item 	|              	|
-| Bagel Quantity    	| Bagel Order Line Item 	|              	|
-| Bagel ID          	| Bagel                 	|              	|
-| Bagel Name        	| Bagel                 	|              	|
-| Bagel Description 	| Bagel                 	|              	|
-| Bagel Price       	| Bagel                 	|              	|
+| Attribute         	| New Entity            	| Explaination                                	|
+|-------------------	|-----------------------	|---------------------------------------------	|
+| Bagel Order ID    	| Bagel Order           	| Primary Key                                 	|
+| Order Date        	| Bagel Order           	| Functionally dependent on Bagel Order ID.   	|
+| First Name        	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Last Name         	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Address 1         	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Address 2         	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| City              	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| State             	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Zip               	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Mobile Phone      	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Delivery Fee      	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Special Notes     	| Bagel Order           	| Functionally dependent on Bagel Order ID    	|
+| Bagel Order ID    	| Bagel Order Line Item 	| Primary Key / Foreign Key                   	|
+| Bagel ID          	| Bagel Order Line Item 	| Primary Key / Foreign Key                   	|
+| Bagel Quantity    	| Bagel Order Line Item 	| Partial dependence on Order ID and Bagel ID 	|
+| Bagel ID          	| Bagel                 	| Primary Key                                 	|
+| Bagel Name        	| Bagel                 	| Functional dependence on bagel ID           	|
+| Bagel Description 	| Bagel                 	| Functional dependence on bagel ID           	|
+| Bagel Price       	| Bagel                 	| Functional dependence on bagel ID           	|
+
+** Cardinality of Entity Relations **
+
 
 
 ### 2. Third Normal Form
