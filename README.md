@@ -5,10 +5,12 @@
 ### 1. Second Normal Form
 
 #### A & B
+**A1A**  
+**A1B**
 ![Second Normal Form](/assets/images/second_normal_form_nora_bagel.png "Second Normal Form")
 
 #### C - Explain the assignments
-
+**A1C**
 | Attribute         	| New Entity            	| Explaination                                	|
 |-------------------	|-----------------------	|---------------------------------------------	|
 | Bagel Order ID    	| Bagel Order           	| Primary Key                                 	|
@@ -41,10 +43,14 @@ One order includes one or more line items (One to Many).
 Many line items bagel ids point to one bagel instance (Many to One).  
 
 ### 2. Third Normal Form
-
+**A2A**  
+**A2B**  
+**A2C**  
+**A2D**  
 ![Third Normal Form](/assets/images/third_normal_form_nora_bagel.png "Third Normal Form")
 
-**Relationships between the tables**  
+**Relationships between the tables** 
+**A2D**
 The relationships between Order -> Line Items <- Bagels is the same as before.  
 
 The new entity Customer has a Many to One relationship with Orders.  
@@ -54,6 +60,11 @@ One order is owned by a single customer.  The same customer can place many order
 Customer -> 1 : M -> Orders.  
 
 **Attributes assigned**
+**A2E**
+Customer attributes were transitively dependent on the Order entity - they were moved to their own entity Customer.
+Customer_ID was created to be the unique primary key for the Customer entity.  Attributes that have functional dependence on the Customer entity were moved to that entity.  
+Customer_ID is used as a foreign key in the Order entity to establish a many to one relationship.
+
 | Attribute         	| New Entity            	| Explaination                                	|
 |-------------------	|-----------------------	|---------------------------------------------	|
 | Bagel Order ID    	| Order                 	| Primary Key                                 	|
@@ -79,13 +90,14 @@ Customer -> 1 : M -> Orders.
 | Bagel Price       	| Bagel                 	| Functional dependence on bagel ID           	|
 
 ### 3. Physical Design
-
+**A3A**  
+**A3B**
 ![Physical Design](/assets/images/physical_design_nora_bagel.png "Physical Design")
 
 ## B - Jaunty Coffee Co
 
 ### 1. Table Schema
-
+**B1A**
 #### SQL Code
 ~~~~sql
 USE JCoffeeCo; 
@@ -131,11 +143,13 @@ CREATE TABLE IF NOT EXISTS coffee (
 ~~~~
 
 #### SQL Result
-
+**B1B**  
 ![Create Table Results](/assets/images/create_tables_results_v2.png "Create Table Results")
 
 
 ### 2. Insert Data
+**B2A**  
+
 #### SQL Code
 ~~~~SQL
 -- -----------------------------------------------------
@@ -755,11 +769,11 @@ VALUES
 ~~~~~
 
 #### SQL Result
-
+**B2B**  
 ![Populate Tables with Data](/assets/images/populate_tables_output.png "Populate Tables Results")
 
 ### 3. Create a View
-
+**B3A**  
 #### SQL Code
 ~~~~SQL
 -- -----------------------------------------------------
@@ -777,10 +791,11 @@ FROM employee;
 ~~~~
 
 #### SQL Result
-
+**B3B**  
 ![Create View Results](/assets/images/create_view_output.png "Create View Results")
 
 ### 4. Create an Index
+**B4A**  
 #### SQL Code
 ~~~~SQL
 -- ------------------------------------------------------
@@ -793,12 +808,12 @@ ON coffee(coffee_name);
 -- SHOW INDEX FROM coffee;
 ~~~~
 #### SQL Result
-
+**B4B**  
 ![Create Index Results](/assets/images/create_index_output.png "Create Index Results")
 
 
 ### 5. Select From Where
-
+**B5A**  
 #### SQL Code
 ~~~~SQL
 -- -------------------------------------------
@@ -813,11 +828,11 @@ FROM coffee_shop
 WHERE state in ('NS', 'VC' );
 ~~~~
 #### SQL Result
-
+**B5B**  
 ![SELECT FROM WHERE Results](/assets/images/SFW_results.png "Select From Where Query Results")
 
 ### 5. Three Table Join SELECT Query
-
+**B6A**  
 #### SQL Code
 ~~~~SQL
 -- -------------------------------------------
@@ -838,5 +853,5 @@ ON coffee.shop_id = coffee_shop.shop_id
 ORDER BY shop_name ASC, Beans ASC, Roast ASC;
 ~~~~
 #### SQL Result
-
+**B6B**  
 ![JOIN Query](/assets/images/three_table_join_query.png "Three Table Join Query")
