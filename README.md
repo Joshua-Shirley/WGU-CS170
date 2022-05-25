@@ -54,14 +54,33 @@ One order is owned by a single customer.  The same customer can place many order
 Customer -> 1 : M -> Orders.  
 
 **Attributes assigned**
-
+| Attribute         	| New Entity            	| Explaination                                	|
+|-------------------	|-----------------------	|---------------------------------------------	|
+| Bagel Order ID    	| Order                 	| Primary Key                                 	|
+| Order Date        	| Order                 	| Functionally dependent on Order ID.         	|
+| Delivery Fee      	| Order                 	| Functionally dependent on Order ID          	|
+| Special Notes     	| Order                 	| Functionally dependent on Order ID          	|
+| Customer ID       	| Order                 	| Foreign Key                                 	|
+| Customer ID       	| Customer              	| Primary Key                                 	|
+| First Name        	| Customer              	| Functionally dependent on Customer ID       	|
+| Last Name         	| Customer              	| Functionally dependent on Customer ID       	|
+| Address 1         	| Customer              	| Functionally dependent on Customer ID       	|
+| Address 2         	| Customer              	| Functionally dependent on Customer ID       	|
+| City              	| Customer              	| Functionally dependent on Customer ID       	|
+| State             	| Customer              	| Functionally dependent on Customer ID       	|
+| Zip               	| Customer              	| Functionally dependent on Customer ID       	|
+| Mobile Phone      	| Customer              	| Functionally dependent on Customer ID       	|
+| Bagel Order ID    	| Bagel Order Line Item 	| Primary Key / Foreign Key                   	|
+| Bagel ID          	| Bagel Order Line Item 	| Primary Key / Foreign Key                   	|
+| Bagel Quantity    	| Bagel Order Line Item 	| Partial dependence on Order ID and Bagel ID 	|
+| Bagel ID          	| Bagel                 	| Primary Key                                 	|
+| Bagel Name        	| Bagel                 	| Functional dependence on bagel ID           	|
+| Bagel Description 	| Bagel                 	| Functional dependence on bagel ID           	|
+| Bagel Price       	| Bagel                 	| Functional dependence on bagel ID           	|
 
 ### 3. Physical Design
 
 ![Physical Design](/assets/images/physical_design_nora_bagel.png "Physical Design")
-
-
-
 
 ## B - Jaunty Coffee Co
 
